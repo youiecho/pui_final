@@ -20,6 +20,39 @@ function bgColorChange() {
     }
 }
 
+$(window).scroll(function () {
+    $('.question').each(function () {
+        var imagePos = $(this).offset().top;
+
+        var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow + 400) {
+            $(this).addClass("animate__animated animate__bounce");
+        }
+    });
+});
+
+$(window).scroll(function () {
+    $('.questionDetail').each(function () {
+        var imagePos = $(this).offset().top;
+
+        var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow + 600) {
+            $(this).addClass("animate__animated animate__fadeIn");
+        }
+    });
+});
+
+$(window).scroll(function () {
+    $('.button').each(function () {
+        var imagePos = $(this).offset().top;
+
+        var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow + 600) {
+            $(this).addClass("animate__animated animate__fadeInUp");
+        }
+    });
+});
+
 $('.behaviorImg').click(function () {
     $('#insert').addClass('animate__animated animate__bounce');
 });
@@ -53,49 +86,4 @@ function three() {
 }
 
 
-
-
-$(window).scroll(function () {
-    $('.question2').each(function () {
-        var imagePos = $(this).offset().top;
-
-        var topOfWindow = $(window).scrollTop();
-        if (imagePos < topOfWindow + 400) {
-            $(this).addClass("animate__animated animate__bounce");
-        }
-    });
-});
-
-$(window).scroll(function () {
-    $('.question3').each(function () {
-        var imagePos = $(this).offset().top;
-
-        var topOfWindow = $(window).scrollTop();
-        if (imagePos < topOfWindow + 400) {
-            $(this).addClass("animate__animated animate__bounce");
-        }
-    });
-});
-
-$(window).scroll(function () {
-    $('.button2').each(function () {
-        var imagePos = $(this).offset().top;
-
-        var topOfWindow = $(window).scrollTop();
-        if (imagePos < topOfWindow + 400) {
-            $(this).addClass("animate__animated animate__fadeInUp");
-        }
-    });
-});
-
-$(window).scroll(function () {
-    $('.button3').each(function () {
-        var imagePos = $(this).offset().top;
-
-        var topOfWindow = $(window).scrollTop();
-        if (imagePos < topOfWindow + 400) {
-            $(this).addClass("animate__animated animate__fadeInUp");
-        }
-    });
-});
 

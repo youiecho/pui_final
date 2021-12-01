@@ -83,8 +83,11 @@ body {
 
 /* Animation */
 
-
-.animate__fadeInUp {
+.animate__fadeIn {
     animation-duration: 1.5s;
     animation-delay: 1s;
+}
+.animate__fadeInUp {
+    animation-duration: 1.5s;
+    animation-delay: 2s;
 }
