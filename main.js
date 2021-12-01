@@ -21,12 +21,12 @@ function bgColorChange() {
 }
 
 $('.behaviorImg').click(function () {
-    $('#insert').addClass('pullDown');
+    $('#insert').addClass('animate__animated animate__bounce');
 });
 
 var $post = $("#insert");
 setInterval(function () {
-    $post.removeClass("pullDown");
+    $post.removeClass("animate__animated animate__bounce");
 }, 1000);
 
 function one() {
