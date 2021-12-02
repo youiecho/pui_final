@@ -36,7 +36,7 @@ $(window).scroll(function () {
         var imagePos = $(this).offset().top;
 
         var topOfWindow = $(window).scrollTop();
-        if (imagePos < topOfWindow + 600) {
+        if (imagePos < topOfWindow + 700) {
             $(this).addClass("animate__animated animate__fadeIn");
         }
     });
@@ -47,33 +47,41 @@ $(window).scroll(function () {
         var imagePos = $(this).offset().top;
 
         var topOfWindow = $(window).scrollTop();
-        if (imagePos < topOfWindow + 600) {
+        if (imagePos < topOfWindow + 700) {
             $(this).addClass("animate__animated animate__fadeInUp");
         }
     });
 });
 
 $('.behaviorImg').click(function () {
-    $('#insert').addClass('animate__animated animate__bounce');
+    $('#insert').addClass('pullDown');
+    // animate__slideInDown
 });
 
 var $post = $("#insert");
 setInterval(function () {
-    $post.removeClass("animate__animated animate__bounce");
-}, 1000);
+    $post.removeClass("pullDown");
+}, 3000);
 
 function one() {
-    var learnMoreContainer = document.getElementById("insert");
+    document.getElementById("insert").innerHTML = "Hello World";
+    var textContainer = document.getElementById("insert");
     var button = document.createElement("button");
-    learnMoreContainer.innerHTML = "this iscontent a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a ";
     button.innerHTML = "Learn More";
-    learnMoreContainer.append(button);
-    button.addEventListener('click', expandLearnMore);
-    function expandLearnMore() {
-        console.log("hi");
-        learnMoreContainer.setAttribute('class', 'animate__animated animate__bounce');
-    }
+    textContainer.append(button);
+    
+
+    button.addEventListener("click", function() {
+        var newText = document.createTextNode("hi");
+        var learnMore = document.getElementById("learnMore");
+        learnMore.append(newText);
+       
+    //     learnMoreContainer.setAttribute('class', 'description pullDown');
+    })
 }
+
+
+
 
 function two() {
     var add = document.getElementById("insert");
