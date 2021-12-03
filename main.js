@@ -63,35 +63,47 @@ setInterval(function () {
     $post.removeClass("pullDown");
 }, 3000);
 
-function one() {
+var $post = $("#learnMore");
+setInterval(function () {
+    $post.removeClass("pullDown");
+}, 3000);
+
+function lowering() {
+    document.getElementById("learnMore").style.opacity = 0;
     document.getElementById("insert").innerHTML = "Hello World";
+    document.getElementById("insert").innerHTML.replace('oij')
     var textContainer = document.getElementById("insert");
     var button = document.createElement("button");
     button.innerHTML = "Learn More";
     textContainer.append(button);
-    
 
-    button.addEventListener("click", function() {
+
+    button.addEventListener("click", function () {
         var newText = document.createTextNode("hi");
         var learnMore = document.getElementById("learnMore");
         learnMore.append(newText);
-       
-    //     learnMoreContainer.setAttribute('class', 'description pullDown');
+        document.getElementById("learnMore").style.opacity = 1;
+        learnMore.setAttribute('class', 'description pullDown');
     })
 }
 
 
 
 
-function two() {
-    var add = document.getElementById("insert");
-    add.innerHTML = "two";
+function blinking() {
+    document.getElementById("learnMore").style.opacity = 0;
+    document.getElementById("insert").innerHTML = "sss World";
+    var textContainer = document.getElementById("insert");
+    var button = document.createElement("button");
+    button.innerHTML = "Learn More";
+    textContainer.append(button);
+
+
+    button.addEventListener("click", function () {
+        var newText = document.createTextNode("hi");
+        var learnMore = document.getElementById("learnMore");
+        learnMore.append(newText);
+        document.getElementById("learnMore").style.opacity = 1;
+        learnMore.setAttribute('class', 'description pullDown');
+    })
 }
-
-function three() {
-    var add = document.getElementById("insert");
-    add.innerHTML = "three";
-}
-
-
-

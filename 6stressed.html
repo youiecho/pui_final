@@ -22,9 +22,6 @@
 <body>
     <!--- Bootstrap grid -->
     <div class="container-fluid">
-
-
-        <!-- Page 5 ------------------------------------------>
         <div id="page5">
             <span id="categoryName"><br>
                 <h1>Stressed</h1><br>
@@ -33,26 +30,31 @@
                 <div class="row">
                     <div class="col-2"></div>
                     <div class="col-md-2 stackem">
-                        <div><img src="assets/placeholder img.jfif" class="img-fluid behaviorImg" alt="placeholder"
-                                onclick="one()"></div>
+                        <div class="container" onclick="yawning()">
+                            <img src="assets/stressed.jpg" class="img-fluid behaviorImg" alt="placeholder">
+                            <div class="overlay">
+                                <div class="text">Yawning</div>
+                            </div>
+                        </div>
                         <br>
-                        <div><img src="assets/placeholder img.jfif" class="img-fluid behaviorImg" alt="placeholder"
-                                onclick="two()"></div>
-                        <br>
-                        <div><img src="assets/placeholder img.jfif" class="img-fluid behaviorImg" alt="placeholder"
-                                onclick="three()"></div>
+                        <div class="container" onclick="LickingLip()">
+                            <img src="assets/stressed-licking lip.jpg" class="img-fluid behaviorImg" alt="placeholder">
+                            <div class="overlay">
+                                <div class="text">Licking Lip</div>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-6">
-                        <h2 class="description" id="insert">Click on the behavior you want to learn about!</h2>
+                        <h2 class="description" id="insert">
+                            Click on the behavior you want to learn about!</h2>
+                        <h3 class="description" id="learnMore"></h3>
                     </div>
                     <div class="col-2"></div>
                 </div>
             </div>
         </div>
-
         <script src="main.js"></script>
     </div>
-
 </body>
 
 </html>

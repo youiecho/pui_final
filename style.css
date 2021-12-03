@@ -98,9 +98,6 @@ body {
     animation-duration: 1s;
 }
 
-.container:hover .overlay {
-    opacity: 1;
-}
 /* Images  */
 img {
     border-radius: 30px;
@@ -131,21 +128,18 @@ img {
     background-color: #008CBA;
   } */
 
- .container:hover .overlay {
+ .container:hover .text {
     opacity: 0.5;
 } 
 
-/* .text {
-    color            : white;
-    font-size        : 12px;
-    position         : absolute;
-    top              : 50%;
-    left             : 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform    : translate(-50%, -50%);
-    transform        : translate(-50%, -50%);
-    text-align       : center;
-}  */
+
+.text {
+    color:rgb(116, 65, 65)
+}
+
+#learnMore {
+    opacity: 0;
+}
 
 
 /*

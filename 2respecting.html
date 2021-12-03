@@ -22,9 +22,6 @@
 <body>
     <!--- Bootstrap grid -->
     <div class="container-fluid">
-
-
-        <!-- Page 5 ------------------------------------------>
         <div id="page5">
             <span id="categoryName"><br>
                 <h1>Respecting</h1><br>
@@ -33,26 +30,37 @@
                 <div class="row">
                     <div class="col-2"></div>
                     <div class="col-md-2 stackem">
-                        <div><img src="assets/placeholder img.jfif" class="img-fluid behaviorImg" alt="placeholder"
-                                onclick="one()"></div>
+                        <div class="container" onclick="stomachFlip()">
+                            <img src="assets/respecting.jpg" class="img-fluid behaviorImg" alt="placeholder">
+                            <div class="overlay">
+                                <div class="text">Stomach Flip</div>
+                            </div>
+                        </div>
                         <br>
-                        <div><img src="assets/placeholder img.jfif" class="img-fluid behaviorImg" alt="placeholder"
-                                onclick="two()"></div>
-                        <br>
-                        <div><img src="assets/placeholder img.jfif" class="img-fluid behaviorImg" alt="placeholder"
-                                onclick="three()"></div>
+                        <div class="container" onclick="followingYou()">
+                            <img src="assets/respecting-following.jpg" class="img-fluid behaviorImg" alt="placeholder">
+                            <div class="overlay">
+                                <div class="text">Following You</div>
+                            </div>
+                        </div>
+                        <div class="container" onclick="breakingEyeContactFirst()">
+                            <img src="assets/respecting-break eye contact first.jpg" class="img-fluid behaviorImg" alt="placeholder">
+                            <div class="overlay">
+                                <div class="text">Breaking Eye Contact First</div>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-6">
-                        <h2 class="description" id="insert">Click on the behavior you want to learn about!</h2>
+                        <h2 class="description" id="insert">
+                            Click on the behavior you want to learn about!</h2>
+                        <h3 class="description" id="learnMore"></h3>
                     </div>
                     <div class="col-2"></div>
                 </div>
             </div>
         </div>
-
         <script src="main.js"></script>
     </div>
-
 </body>
 
 </html>

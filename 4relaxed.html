@@ -18,13 +18,9 @@
     <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
     <title>Dogs</title>
 </head>
-
 <body>
     <!--- Bootstrap grid -->
     <div class="container-fluid">
-
-
-        <!-- Page 5 ------------------------------------------>
         <div id="page5">
             <span id="categoryName"><br>
                 <h1>Relaxed</h1><br>
@@ -33,26 +29,31 @@
                 <div class="row">
                     <div class="col-2"></div>
                     <div class="col-md-2 stackem">
-                        <div><img src="assets/placeholder img.jfif" class="img-fluid behaviorImg" alt="placeholder"
-                                onclick="one()"></div>
+                        <div class="container" onclick="relaxedFacialExpression()">
+                            <img src="assets/relaxed.jpg" class="img-fluid behaviorImg" alt="placeholder">
+                            <div class="overlay">
+                                <div class="text">Relaxed Facial Expression</div>
+                            </div>
+                        </div>
                         <br>
-                        <div><img src="assets/placeholder img.jfif" class="img-fluid behaviorImg" alt="placeholder"
-                                onclick="two()"></div>
-                        <br>
-                        <div><img src="assets/placeholder img.jfif" class="img-fluid behaviorImg" alt="placeholder"
-                                onclick="three()"></div>
+                        <div class="container" onclick="mouthOpenandRelaxedTongue()">
+                            <img src="assets/relaxed-mouth open.jpg" class="img-fluid behaviorImg" alt="placeholder">
+                            <div class="overlay">
+                                <div class="text">Mouth Open and Relaxed Tongue</div>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-6">
-                        <h2 class="description" id="insert">Click on the behavior you want to learn about!</h2>
+                        <h2 class="description" id="insert">
+                            Click on the behavior you want to learn about!</h2>
+                        <h3 class="description" id="learnMore"></h3>
                     </div>
                     <div class="col-2"></div>
                 </div>
             </div>
         </div>
-
         <script src="main.js"></script>
     </div>
-
 </body>
 
 </html>
