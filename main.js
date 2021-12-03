@@ -23,9 +23,8 @@ function bgColorChange() {
 $(window).scroll(function () {
     $('.question').each(function () {
         var imagePos = $(this).offset().top;
-
         var topOfWindow = $(window).scrollTop();
-        if (imagePos < topOfWindow + 400) {
+        if (imagePos < topOfWindow + 700) {
             $(this).addClass("animate__animated animate__bounce");
         }
     });
@@ -53,6 +52,17 @@ $(window).scroll(function () {
     });
 });
 
+$(window).scroll(function () {
+    $('#page4').each(function () {
+        var imagePos = $(this).offset().top;
+
+        var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow + 700) {
+            $(this).addClass("animate__animated animate__fadeIn");
+        }
+    });
+});
+
 $('.behaviorImg').click(function () {
     $('#insert').addClass('pullDown');
 });
@@ -72,6 +82,7 @@ function addText(text, learnmoretext) {
     var button = document.createElement("button");
     button.innerHTML = "Learn More";
     textContainer.append(button);
+    button.setAttribute('id', 'learnMoreButton');
 
     textContainer.setAttribute('class', 'description pullDown');
     var $post = $("#insert");

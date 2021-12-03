@@ -9,30 +9,34 @@ a {
 h1 {
     color      : rgb(116, 65, 65);
     font-family: 'Fredoka One';
-    font-size  : 48px;
+    font-size  : 4vw;
 }
 
 h2 {
     color      : rgb(116, 65, 65);
     font-family: 'Varela Round';
-    font-size  : 20px;
+    font-size  : 1.5vw;
 }
 
 /* Buttons */
 button {
-    color           : white;
+    color           : rgb(251, 137, 141);
     font-family     : 'Varela Round';
-    font-size       : 30px;
     padding         : 15px 25px;
-    font-size       : 24px;
+    font-size       : 1.8vw;
     text-align      : center;
     margin          : 30px auto 0;
     display         : block;
     cursor          : pointer;
     outline         : none;
+    background-color: white;
+    border       : none;
+    border-radius: 30px;
+}
+
+#learnMoreButton {
+    color           : white;
     background-color: rgb(251, 137, 141);;
-    border          : none;
-    border-radius   : 30px;
 }
 
 
@@ -66,6 +70,12 @@ body {
     width : 100%;
 }
 
+.categoryName {
+    margin: 30px;
+    margin-top: 40px;
+    vertical-align: middle;
+}
+
 .category-label {
     min-height      : 45px;
     line-height     : 45px;
@@ -73,25 +83,35 @@ body {
     background-color: white;
 }
 
-.description {
-    padding-left: 10px;
-    padding-left: 10px;
-    color      : rgb(116, 65, 65);
-    font-size  : 20px;
+.category-label:hover {
     min-height      : 45px;
     line-height     : 45px;
     border-radius   : 30px;
+    background-color: rgb(116, 65, 65);
+    color: white;
 }
+
+.description {
+    padding-left : 10px;
+    padding-left : 10px;
+    color        : rgb(116, 65, 65);
+    font-size    : 20px;
+    min-height   : 45px;
+    line-height  : 45px;
+    border-radius: 30px;
+}
+
 #insert {
-    padding: 30px;
+    padding    : 30px;
     color      : rgb(116, 65, 65);
-    font-size  : 20px;
-    min-height      : 45px;
-    line-height     : 26px;
+    font-size  : 1.5vw;
+    min-height : 45px;
+    line-height: 26px;
 }
+
 .textWrapper {
     background-color: white;
-    border-radius   : 30px; 
+    border-radius   : 30px;
 }
 
 /* Animation */
@@ -115,9 +135,14 @@ img {
     border-radius: 30px;
     min-height   : 100;
 }
-
-.container:hover .text {
+.overlay:hover {
     opacity: 0.5;
+  }
+img:hover {
+    opacity: 0.5;
+}
+.container {
+    padding: 0;
 }
 
 .text {
@@ -128,6 +153,14 @@ img {
     opacity: 0;
 }
 
+.behaviorName {
+    margin-top: 10px;
+    font-size: 1.2vw;
+    color:rgb(116, 65, 65)
+}
+body.loaded .questions {
+    display:none;
+  }
 
 /*
 ==============================================
@@ -209,4 +242,3 @@ pullDown
         -webkit-transform: scaleY(1);
     }
 }
-
