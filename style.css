@@ -20,17 +20,17 @@ h2 {
 
 /* Buttons */
 button {
-    color           : rgb(251, 137, 141);
+    color           : white;
     font-family     : 'Varela Round';
     font-size       : 30px;
     padding         : 15px 25px;
     font-size       : 24px;
     text-align      : center;
-    margin          : 0 auto;
+    margin          : 30px auto 0;
     display         : block;
     cursor          : pointer;
     outline         : none;
-    background-color: white;
+    background-color: rgb(251, 137, 141);;
     border          : none;
     border-radius   : 30px;
 }
@@ -66,21 +66,33 @@ body {
     width : 100%;
 }
 
-.category-label,
-.description {
+.category-label {
+    min-height      : 45px;
+    line-height     : 45px;
+    border-radius   : 30px;
     background-color: white;
+}
+
+.description {
+    padding-left: 10px;
+    padding-left: 10px;
+    color      : rgb(116, 65, 65);
+    font-size  : 20px;
     min-height      : 45px;
     line-height     : 45px;
     border-radius   : 30px;
 }
-
-.description {
-    margin-left: 10px;
-    margin-left: 10px;
+#insert {
+    padding: 30px;
     color      : rgb(116, 65, 65);
     font-size  : 20px;
+    min-height      : 45px;
+    line-height     : 26px;
 }
-
+.textWrapper {
+    background-color: white;
+    border-radius   : 30px; 
+}
 
 /* Animation */
 /* Animate.css */
@@ -104,37 +116,12 @@ img {
     min-height   : 100;
 }
 
-/* Hover */
-/* .container {
-    position: relative;
-    width   : 100%;
+.container:hover .text {
+    opacity: 0.5;
 }
 
-.behaviorImg {
-    width  : 100%;
-    height : auto;
-} */
-
-/* .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #008CBA;
-  } */
-
- .container:hover .text {
-    opacity: 0.5;
-} 
-
-
 .text {
-    color:rgb(116, 65, 65)
+    color: rgb(116, 65, 65)
 }
 
 #learnMore {
@@ -222,3 +209,4 @@ pullDown
         -webkit-transform: scaleY(1);
     }
 }
+

@@ -68,7 +68,6 @@ function addText(text, learnmoretext) {
     document.getElementById("learnMore").style.opacity = 0;
     var textContainer = document.getElementById("insert");
     $("#insert").html(text);
-    
 
     var button = document.createElement("button");
     button.innerHTML = "Learn More";
@@ -78,7 +77,7 @@ function addText(text, learnmoretext) {
     var $post = $("#insert");
     setInterval(function () {
         $post.removeClass("pullDown");
-    }, 3000);
+    }, 3500);
 
     button.addEventListener("click", function () {
         document.getElementById("learnMore").style.opacity = 1;
@@ -88,6 +87,6 @@ function addText(text, learnmoretext) {
         var $post = $("#learnMore");
         setInterval(function () {
             $post.removeClass("pullDown");
-        }, 3000);
+        }, 3500);
     })
 }
