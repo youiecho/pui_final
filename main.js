@@ -55,7 +55,6 @@ $(window).scroll(function () {
 
 $('.behaviorImg').click(function () {
     $('#insert').addClass('pullDown');
-    // animate__slideInDown
 });
 
 var $post = $("#insert");
@@ -63,47 +62,32 @@ setInterval(function () {
     $post.removeClass("pullDown");
 }, 3000);
 
-var $post = $("#learnMore");
-setInterval(function () {
-    $post.removeClass("pullDown");
-}, 3000);
 
-function lowering() {
+
+function addText(text, learnmoretext) {
     document.getElementById("learnMore").style.opacity = 0;
-    document.getElementById("insert").innerHTML = "Hello World";
-    document.getElementById("insert").innerHTML.replace('oij')
     var textContainer = document.getElementById("insert");
+    $("#insert").html(text);
+    
+
     var button = document.createElement("button");
     button.innerHTML = "Learn More";
     textContainer.append(button);
 
+    textContainer.setAttribute('class', 'description pullDown');
+    var $post = $("#insert");
+    setInterval(function () {
+        $post.removeClass("pullDown");
+    }, 3000);
 
     button.addEventListener("click", function () {
-        var newText = document.createTextNode("hi");
-        var learnMore = document.getElementById("learnMore");
-        learnMore.append(newText);
         document.getElementById("learnMore").style.opacity = 1;
-        learnMore.setAttribute('class', 'description pullDown');
-    })
-}
-
-
-
-
-function blinking() {
-    document.getElementById("learnMore").style.opacity = 0;
-    document.getElementById("insert").innerHTML = "sss World";
-    var textContainer = document.getElementById("insert");
-    var button = document.createElement("button");
-    button.innerHTML = "Learn More";
-    textContainer.append(button);
-
-
-    button.addEventListener("click", function () {
-        var newText = document.createTextNode("hi");
         var learnMore = document.getElementById("learnMore");
-        learnMore.append(newText);
-        document.getElementById("learnMore").style.opacity = 1;
+        $("#learnMore").html(learnmoretext);
         learnMore.setAttribute('class', 'description pullDown');
+        var $post = $("#learnMore");
+        setInterval(function () {
+            $post.removeClass("pullDown");
+        }, 3000);
     })
 }
