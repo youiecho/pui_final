@@ -9,34 +9,35 @@ a {
 h1 {
     color      : rgb(116, 65, 65);
     font-family: 'Fredoka One';
-    font-size  : 4vw;
+    font-size  : clamp(16px, 4vw, 4vw);;
 }
 
 h2 {
     color      : rgb(116, 65, 65);
     font-family: 'Varela Round';
-    font-size  : 1.5vw;
+    font-size  : clamp(16px, 1.5vw, 1.5vw);;
 }
+
 
 /* Buttons */
 button {
-    color           : rgb(251, 137, 141);
+    color           : rgb(216, 98, 102);
     font-family     : 'Varela Round';
     padding         : 15px 25px;
-    font-size       : 1.8vw;
+    font-size       : clamp(16px, 1.8vw, 1.8vw);
     text-align      : center;
     margin          : 30px auto 0;
     display         : block;
     cursor          : pointer;
     outline         : none;
     background-color: white;
-    border       : none;
-    border-radius: 30px;
+    border          : none;
+    border-radius   : 30px;
 }
 
 #learnMoreButton {
     color           : white;
-    background-color: rgb(251, 137, 141);;
+    background-color: rgb(251, 137, 141);
 }
 
 
@@ -70,9 +71,17 @@ body {
     width : 100%;
 }
 
+.container {
+    padding: 0;
+}
+
+.behaviorName:hover {
+    opacity: 0.5;
+}
+
 .categoryName {
-    margin: 30px;
-    margin-top: 40px;
+    margin        : 30px;
+    margin-top    : 40px;
     vertical-align: middle;
 }
 
@@ -88,14 +97,18 @@ body {
     line-height     : 45px;
     border-radius   : 30px;
     background-color: rgb(116, 65, 65);
-    color: white;
+    color           : white;
+}
+.textWrapper {
+    background-color: white;
+    border-radius   : 30px;
 }
 
 .description {
     padding-left : 10px;
     padding-left : 10px;
     color        : rgb(116, 65, 65);
-    font-size    : 20px;
+    font-size    : clamp(16px, 1.5vw, 1.5vw);;
     min-height   : 45px;
     line-height  : 45px;
     border-radius: 30px;
@@ -104,14 +117,9 @@ body {
 #insert {
     padding    : 30px;
     color      : rgb(116, 65, 65);
-    font-size  : 1.5vw;
+    font-size  : clamp(16px, 1.5vw, 1.5vw);
     min-height : 45px;
     line-height: 26px;
-}
-
-.textWrapper {
-    background-color: white;
-    border-radius   : 30px;
 }
 
 /* Animation */
@@ -135,15 +143,14 @@ img {
     border-radius: 30px;
     min-height   : 100;
 }
-.overlay:hover {
-    opacity: 0.5;
-  }
+
+
+
 img:hover {
     opacity: 0.5;
 }
-.container {
-    padding: 0;
-}
+
+
 
 .text {
     color: rgb(116, 65, 65)
@@ -155,12 +162,13 @@ img:hover {
 
 .behaviorName {
     margin-top: 10px;
-    font-size: 1.2vw;
-    color:rgb(116, 65, 65)
+    font-size : clamp(16px, 1.2vw, 1.2vw);
+    color     : rgb(116, 65, 65)
 }
+
 body.loaded .questions {
-    display:none;
-  }
+    display: none;
+}
 
 /*
 ==============================================
