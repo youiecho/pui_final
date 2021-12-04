@@ -1,0 +1,261 @@
+/* Text
+==============================================
+*/
+a {
+    color          : inherit;
+    /* blue colors for links too */
+    text-decoration: inherit;
+    /* no underline */
+}
+
+h1 {
+    color      : rgb(116, 65, 65);
+    font-family: 'Fredoka One';
+    font-size  : clamp(16px, 3.5vw, 3.5vw);
+    ;
+}
+
+h2 {
+    color      : rgb(116, 65, 65);
+    font-family: 'Varela Round';
+    font-size  : clamp(16px, 1.5vw, 1.5vw);
+    ;
+}
+
+/* General Style
+==============================================
+*/
+body {
+    transition-property       : background;
+    text-align                : center;
+    transition-duration       : 2000ms;
+    transition-timing-function: linear;
+    transition-timing-function: ease-in;
+    text-decoration           : none;
+    color                     : white;
+    background-color          : rgb(245, 222, 179);
+}
+
+#page1,
+#page2,
+#page3,
+#page4,
+#detailPage {
+    height: 100vh;
+    width : 100%;
+}
+
+.container {
+    padding: 0;
+}
+
+.row {
+    padding-bottom: 16px;
+}
+
+.stackem div {
+    width: 100%;
+}
+
+.category-label {
+    min-height      : 45px;
+    line-height     : 45px;
+    border-radius   : 30px;
+    background-color: white;
+}
+
+.category-label:hover {
+    min-height      : 45px;
+    line-height     : 45px;
+    border-radius   : 30px;
+    background-color: rgb(116, 65, 65);
+    color           : white;
+}
+
+/* Detail Pages
+==============================================
+*/
+.categoryName {
+    margin        : 30px;
+    margin-top    : 50px;
+    vertical-align: middle;
+}
+
+.behaviorName {
+    margin-top: 10px;
+    font-size : clamp(16px, 1.2vw, 1.2vw);
+    color     : rgb(116, 65, 65)
+}
+
+.behaviorName:hover {
+    opacity: 0.5;
+}
+
+.description {
+    padding-left: 10px;
+    padding-left: 10px;
+    color       : rgb(116, 65, 65);
+    font-size   : clamp(16px, 1.3vw, 1.3vw);
+    min-height   : 45px;
+    line-height  : 30px;
+    border-radius: 30px;
+    font-weight: normal;
+}
+
+.textWrapper {
+    background-color: white;
+    border-radius   : 30px;
+}
+
+#insert {
+    padding    : 30px;
+    color      : rgb(116, 65, 65);
+    font-size  : clamp(16px, 1.5vw, 1.5vw);
+    min-height : 45px;
+    line-height: 30px;
+}
+
+#learnMore {
+    opacity: 0;
+    background-color: white;
+    padding: 16px;
+}
+
+/* Images
+==============================================
+*/
+img {
+    border-radius: 30px;
+    min-height   : 100px;
+}
+
+img:hover {
+    opacity: 0.5;
+}
+
+/* Buttons
+==============================================
+*/
+.button, button {
+    color           : rgb(116, 65, 65);
+    font-family     : 'Varela Round';
+    padding         : 15px 25px;
+    font-size       : clamp(16px, 1.8vw, 1.8vw);
+    text-align      : center;
+    margin          : 30px auto 0;
+    display         : block;
+    cursor          : pointer;
+    outline         : none;
+    background-color: white;
+    border          : none;
+    border-radius   : 30px;
+    width: 18vw;
+}
+
+.button:hover {
+    background-color: rgb(251, 137, 141);
+    color           : white;
+}
+
+#learnMoreButton {
+    color           : white;
+    background-color: rgb(251, 137, 141);
+}
+
+/* Animation 
+==============================================
+*/
+html {
+    scroll-behavior: smooth;
+}
+
+/* Animate.css */
+.animate__fadeIn {
+    animation-duration: 1.5s;
+    animation-delay   : 1s;
+}
+
+.animate__fadeInUp {
+    animation-duration: 1.5s;
+    animation-delay   : 2s;
+}
+
+.animate_slideInDown {
+    animation-duration: 1s;
+}
+
+/* Referenced from http://www.justinaguilar.com/ */
+.pullDown {
+    animation-name        : pullDown;
+    -webkit-animation-name: pullDown;
+
+    animation-duration        : 1.1s;
+    -webkit-animation-duration: 1.1s;
+
+    animation-timing-function        : ease-out;
+    -webkit-animation-timing-function: ease-out;
+
+    transform-origin        : 50% 0%;
+    -ms-transform-origin    : 50% 0%;
+    -webkit-transform-origin: 50% 0%;
+}
+
+@keyframes pullDown {
+    0% {
+        transform: scaleY(0.1);
+    }
+
+    40% {
+        transform: scaleY(1.02);
+    }
+
+    60% {
+        transform: scaleY(0.98);
+    }
+
+    80% {
+        transform: scaleY(1.01);
+    }
+
+    100% {
+        transform: scaleY(0.98);
+    }
+
+    80% {
+        transform: scaleY(1.01);
+    }
+
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+@-webkit-keyframes pullDown {
+    0% {
+        -webkit-transform: scaleY(0.1);
+    }
+
+    40% {
+        -webkit-transform: scaleY(1.02);
+    }
+
+    60% {
+        -webkit-transform: scaleY(0.98);
+    }
+
+    80% {
+        -webkit-transform: scaleY(1.01);
+    }
+
+    100% {
+        -webkit-transform: scaleY(0.98);
+    }
+
+    80% {
+        -webkit-transform: scaleY(1.01);
+    }
+
+    100% {
+        -webkit-transform: scaleY(1);
+    }
+}

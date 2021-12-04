@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Varela+Round&display=swap" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <title>Language of Dogs</title>
+</head>
+
+<body onload="bgColorChange()">
+    <!--- Bootstrap grid -->
+    <div class="container-fluid">
+        <section aria-labelledby="introduction">
+            <!-- Page 1 -->
+            <div id="page1" class="d-flex align-items-center">
+                <div class="content-cluster">
+                    <div class="row">
+                        <div class="col-2"></div>
+                        <div class="col-8">
+                            <h1 class="animate__animated animate__bounce">Do you live with a dog? <br>
+                                How much do we know about what dogs actually want to say?</h1>
+                        </div>
+                        <div class="col-2"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-4"></div>
+                        <div class="col-4">
+                            <a href="#page2" class="button animate__animated animate__fadeInUp" id='btn1' onclick='window.location.href = "#page2"'>
+                                    Let's Find Out!
+                                </a>
+                        </div>
+                        <div class="col-4"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section aria-labelledby="introduction2">
+            <!-- Page 2 -->
+            <div id="page2" class="d-flex align-items-center">
+                <div class="content-cluster" id="q2">
+                    <div class="row">
+                        <div class="col-3"></div>
+                        <div class="col-6 q1 question">
+                            <h1>Did you know?</h1>
+                        </div>
+                        <div class="col-3"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-3"></div>
+                        <div class="col-6 q1 questionDetail">
+                            <h2>Cute fact! Dogs enjoy eye contact with humans. They may be checking in with you for
+                                reassurance,
+                                or making sure that you are still there or simply because he loves you and enjoys
+                                looking at you.</h2>
+                        </div>
+                        <div class="col-3"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-4"></div>
+                        <div class="col-4">
+                            <a href="#page3" class="button" id='btn2'>Got It!</a>
+                        </div>
+                        <div class="col-4"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section aria-labelledby="introduction3">
+            <!-- Page 3 -->
+            <div id="page3" class="d-flex align-items-center">
+                <div class="content-cluster" id="q3">
+                    <div class="row question3">
+                        <div class="col-3"></div>
+                        <div class="col-6 q1 question">
+                            <h1>Let's Find Out!</h1>
+                        </div>
+                        <div class="col-3"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-3"></div>
+                        <div class="col-6 q1 questionDetail">
+                            <h2>Dogs cannot talk, but they communicate their emotions and thoughts
+                                through various behaviors. We will look into types of behaviors,
+                                what they mean, and what we may do to help them if necessary.</h2>
+                        </div>
+                        <div class="col-3"></div>
+                    </div>
+
+                    <div class="row button3">
+                        <div class="col-4"></div>
+                        <div class="col-4">
+                            <a href="#page4" class="button" id='btn3'>Ok!</a>
+                        </div>
+                        <div class="col-4"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section aria-labelledby="behaviorCategories">
+            <!-- Page 4 -->
+            <div id="page4" class="d-flex align-items-center">
+                <div class="content-cluster">
+                    <div class="row justify-content-center">
+                        <!-- First Row of Images -->
+                        <div class="col-sm-4 col-md-2">
+                            <a href="1appeasing.html"><img src="assets/appeasing.jpg" class="img-fluid"
+                                    alt="dog lowering head and body"></a>
+                        </div>
+                        <div class="col-sm-4 col-md-2">
+                            <a href="2respecting.html"><img src="assets/respecting.jpg" class="img-fluid"
+                                    alt="dog lying down on grass belly-up"></a>
+                        </div>
+                        <div class="col-sm-4 col-md-2">
+                            <a href="3alarmed.html"><img src="assets/alarmed.jpg" class="img-fluid"
+                                    alt="dog showing teeth and looking intensely"></a>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center">
+                        <!-- First Row of Category Labels -->
+                        <div class="col-sm-4 col-md-2">
+                            <a href="1appeasing.html">
+                                <h2 class="category-label">Appeasing</h2>
+                            </a>
+                        </div>
+                        <div class="col-sm-4 col-md-2">
+                            <a href="2respecting.html">
+                                <h2 class="category-label">Respecting</h2>
+                            </a>
+                        </div>
+                        <div class="col-sm-4 col-md-2">
+                            <a href="3alarmed.html">
+                                <h2 class="category-label">Alarmed</h2>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center">
+                        <!-- Second Row of Images -->
+                        <div class="col-sm-4 col-md-2">
+                            <a href="4relaxed.html"><img src="assets/relaxed.jpg" class="img-fluid"
+                                    alt="dog lying down comfortably on a couch"></a>
+                        </div>
+                        <div class="col-sm-4 col-md-2">
+                            <a href="5curious.html"><img src="assets/curious.jpg" class="img-fluid"
+                                    alt="dog standing outside with head tilted to the right"></a>
+                        </div>
+                        <div class="col-sm-4 col-md-2">
+                            <a href="6stressed.html"><img src="assets/stressed.jpg" class="img-fluid"
+                                    alt="dog yawning big"></a>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center">
+                        <!-- Second Row of Category Labels -->
+                        <div class="col-sm-4 col-md-2">
+                            <a href="4relaxed.html">
+                                <h2 class="category-label">Relaxed</h2>
+                            </a>
+                        </div>
+                        <div class="col-sm-4 col-md-2">
+                            <a href="5curious.html">
+                                <h2 class="category-label">Curious</h2>
+                            </a>
+                        </div>
+                        <div class="col-sm-4 col-md-2">
+                            <a href="6stressed.html">
+                                <h2 class="category-label">Stressed</h2>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="assets/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Varela+Round&display=swap" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <title>Language of Dogs</title>
+</head>
+
+<body>
+    <!--- Bootstrap grid -->
+    <div class="container-fluid">
+        <section aria-labelledby="detailPage" id="detailPage">
+            <div class="categoryName" aria-labelledby="header">
+                <h1>Appeasing</h1>
+            </div>
+            <div class="content-cluster">
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-md-2 stackem">
+                        <div class="container animate__animated animate__fadeIn"
+                            onclick="addText('If your dog is lowering the head and ears down, it often means that the dog is ready to be petted, or is being submissive to you.', 'In some cases, this can be a sign of fear or submissiveness against another dog.')">
+                            <img src="assets/appeasing.jpg" class="img-fluid" alt="dog lowering head and body">
+                            <div class="behaviorName">Lowering Head and Ears</div>
+                        </div>
+                        <br>
+                        <div class="container animate__animated animate__fadeIn">
+                            <img src="assets/appeasing-blinking.jpg" class="img-fluid"
+                                alt="face of dog lying down and blinking sleepily"
+                                onclick="addText('Dogs often blink as a way to appease and be friendly. They mean no threat and are relaxed. If a stranger immediately makes an intense eye contact, it may seem like an aggressive gesture for some dogs, making them blink.', 'What they are trying to say, in human language, could be “I come in peace, I mean no harm!”')">
+                            <div class="behaviorName">Blinking</div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6">
+                        <div class="textWrapper animate__animated animate__fadeInUp">
+                            <h2 id="insert">
+                                Click on the behavior you want to learn about!</h2>
+                        </div>
+                        <h3 class="description" id="learnMore"></h3>
+                    </div>
+                    <div class="col-2"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="assets/main.js"></script>
+</body>
+
+</html>

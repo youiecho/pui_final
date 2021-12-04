@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Varela+Round&display=swap" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <title>Language of Dogs</title>
+</head>
+
+<body>
+    <!--- Bootstrap grid -->
+    <div class="container-fluid">
+        <section aria-labelledby="detailPage" id="detailPage">
+            <div class="categoryName" aria-labelledby="header">
+                <h1>Curious</h1>
+            </div>
+            <div class="content-cluster">
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-md-2 stackem">
+                        <div class="container container animate__animated animate__fadeIn"
+                            onclick="addText('Tilting the head to the side means that the dog is curious. When you make an interesting or unfamiliar sound, your dog will often do this.','However, if this becomes too frequent, it means your dog feels imbalanced. In rare cases, it could be a symptom of disorders of the vestibular system, a sensory system located in the inner ear which provides information needed to hold the body upright and move well.')">
+                            <img src="assets/curious.jpg" class="img-fluid behaviorImg"
+                                alt="dog standing outside with head tilted to the right">
+                                <div class="behaviorName">Tilting Head</div>
+                        </div>
+                        <br>
+                        <div class="container container animate__animated animate__fadeIn"
+                            onclick="addText('Lifting a front paw often means that your dog is anticipating what will happen and what to do next.','Occasionally, it can be a sign of stress and fear. Your dog may be feeling insecure or threatened, and you should try to reassure your dog.')">
+                            <img src="assets/curious-lifting front paw.jpg" class="img-fluid behaviorImg"
+                                alt="dog with a bow tie sitting and lifting one front paw">
+                                <div class="behaviorName">Lifting Front Paw</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <div class="textWrapper animate__animated animate__fadeInUp">
+                            <h2 id="insert">
+                                Click on the behavior you want to learn about!</h2>
+                        </div>
+                        <h3 class="description" id="learnMore"></h3>
+                    </div>
+                    <div class="col-2"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="assets/main.js"></script>
+    </div>
+</body>
+
+</html>
