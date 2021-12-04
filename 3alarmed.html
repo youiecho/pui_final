@@ -16,13 +16,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Varela+Round&display=swap" rel="stylesheet">
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
-    <title>Dogs</title>
+    <title>Language of Dogs</title>
 </head>
 
 <body>
     <!--- Bootstrap grid -->
     <div class="container-fluid">
-        <div id="page5">
+        <section aria-labelledby="detailPage" id="detailPage">
             <span id="categoryName"><br>
                 <h1>Alarmed</h1><br>
             </span>
@@ -32,27 +32,25 @@
                     <div class="col-md-2 stackem">
                         <div class="container container animate__animated animate__fadeIn" onclick="addText('A common reason is that  your dog is sensing danger, and is prepared to go into protect mode. Dogs often feel driven to guard the home. They could also be fearful. However, it could also be a sign of friendliness, or just playing around. When playing around, they would have light sneezes, a low posture with a raised ear, pricked ears, or a wagging tail, as opposed to tensed body. It is also important to understand the context to know how they are feeling.','plac')">
                             <img src="assets/alarmed.jpg" class="img-fluid behaviorImg" alt="dog showing teeth and looking intensely">
-                            <div class="overlay">
-                                <div class="text">Showing Teeth</div>
-                            </div>
+                                <div class="behaviorName">Showing Teeth</div>
                         </div>
                         <br>
                         <div class="container container animate__animated animate__fadeIn" onclick="addText('Your dog could be too excited, for instance, when they ar wagging tails and lightly biting your hand. However, depending on the situation and how tense their body is, it could be an indication of intent to harm.','plac')">
                             <img src="assets/alarmed-bite and hold.jpg" class="img-fluid behaviorImg" alt="dog tugging on a rope hard">
-                            <div class="overlay">
-                                <div class="text">Bite and Hold</div>
-                            </div>
+                                <div class="behaviorName">Bite and Hold</div>
                         </div>
                     </div>
-                    <div class="col-6">
-                        <h2 class="description container animate__animated animate__fadeInUp" id="insert">
-                            Click on the behavior you want to learn about!</h2>
+                    <div class="col-sm-12 col-md-6">
+                        <div class="textWrapper animate__animated animate__fadeInUp">
+                            <h2 id="insert">
+                                Click on the behavior you want to learn about!</h2>
+                        </div>
                         <h3 class="description" id="learnMore"></h3>
                     </div>
                     <div class="col-2"></div>
                 </div>
             </div>
-        </div>
+        </section>
         <script src="main.js"></script>
     </div>
 </body>

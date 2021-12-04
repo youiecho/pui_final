@@ -1,4 +1,6 @@
-/* Text */
+/* Text
+==============================================
+*/
 a {
     color          : inherit;
     /* blue colors for links too */
@@ -9,43 +11,20 @@ a {
 h1 {
     color      : rgb(116, 65, 65);
     font-family: 'Fredoka One';
-    font-size  : clamp(16px, 4vw, 4vw);;
+    font-size  : clamp(16px, 3.5vw, 3.5vw);
+    ;
 }
 
 h2 {
     color      : rgb(116, 65, 65);
     font-family: 'Varela Round';
-    font-size  : clamp(16px, 1.5vw, 1.5vw);;
+    font-size  : clamp(16px, 1.5vw, 1.5vw);
+    ;
 }
 
-
-/* Buttons */
-button {
-    color           : rgb(116, 65, 65);
-    font-family     : 'Varela Round';
-    padding         : 15px 25px;
-    font-size       : clamp(16px, 1.8vw, 1.8vw);
-    text-align      : center;
-    margin          : 30px auto 0;
-    display         : block;
-    cursor          : pointer;
-    outline         : none;
-    background-color: white;
-    border          : none;
-    border-radius   : 30px;
-}
-button:hover {
-    background-color:rgb(251, 137, 141);
-    color: white;
-}
-#learnMoreButton {
-    color           : white;
-    background-color: rgb(251, 137, 141);
-}
-
-
-
-/* General Style */
+/* General Style
+==============================================
+*/
 body {
     text-align                : center;
     transition-duration       : 2000ms;
@@ -57,19 +36,11 @@ body {
     background-color          : rgb(245, 222, 179);
 }
 
-.row {
-    padding-bottom: 16px;
-}
-
-.stackem div {
-    width: 100%;
-}
-
 #page1,
 #page2,
 #page3,
 #page4,
-#page5 {
+#detailPage {
     height: 100vh;
     width : 100%;
 }
@@ -78,14 +49,12 @@ body {
     padding: 0;
 }
 
-.behaviorName:hover {
-    opacity: 0.5;
+.row {
+    padding-bottom: 16px;
 }
 
-.categoryName {
-    margin        : 30px;
-    margin-top    : 40px;
-    vertical-align: middle;
+.stackem div {
+    width: 100%;
 }
 
 .category-label {
@@ -102,19 +71,40 @@ body {
     background-color: rgb(116, 65, 65);
     color           : white;
 }
-.textWrapper {
-    background-color: white;
-    border-radius   : 30px;
+
+/* Detail Pages
+==============================================
+*/
+.categoryName {
+    margin        : 30px;
+    margin-top    : 50px;
+    vertical-align: middle;
+}
+
+.behaviorName {
+    margin-top: 10px;
+    font-size : clamp(16px, 1.2vw, 1.2vw);
+    color     : rgb(116, 65, 65)
+}
+
+.behaviorName:hover {
+    opacity: 0.5;
 }
 
 .description {
-    padding-left : 10px;
-    padding-left : 10px;
-    color        : rgb(116, 65, 65);
-    font-size    : clamp(16px, 1.5vw, 1.5vw);;
+    padding-left: 10px;
+    padding-left: 10px;
+    color       : rgb(116, 65, 65);
+    font-size   : clamp(16px, 1.5vw, 1.5vw);
+    ;
     min-height   : 45px;
     line-height  : 45px;
     border-radius: 30px;
+}
+
+.textWrapper {
+    background-color: white;
+    border-radius   : 30px;
 }
 
 #insert {
@@ -122,10 +112,60 @@ body {
     color      : rgb(116, 65, 65);
     font-size  : clamp(16px, 1.5vw, 1.5vw);
     min-height : 45px;
-    line-height: 26px;
+    line-height: 30px;
 }
 
-/* Animation */
+#learnMore {
+    opacity: 0;
+}
+
+/* Images
+==============================================
+*/
+img {
+    border-radius: 30px;
+    min-height   : 100;
+}
+
+img:hover {
+    opacity: 0.5;
+}
+
+/* Buttons
+==============================================
+*/
+button {
+    color           : rgb(116, 65, 65);
+    font-family     : 'Varela Round';
+    padding         : 15px 25px;
+    font-size       : clamp(16px, 1.8vw, 1.8vw);
+    text-align      : center;
+    margin          : 30px auto 0;
+    display         : block;
+    cursor          : pointer;
+    outline         : none;
+    background-color: white;
+    border          : none;
+    border-radius   : 30px;
+}
+
+button:hover {
+    background-color: rgb(251, 137, 141);
+    color           : white;
+}
+
+#learnMoreButton {
+    color           : white;
+    background-color: rgb(251, 137, 141);
+}
+
+/* Animation 
+==============================================
+*/
+html {
+    scroll-behavior: smooth;
+}
+
 /* Animate.css */
 .animate__fadeIn {
     animation-duration: 1.5s;
@@ -141,44 +181,7 @@ body {
     animation-duration: 1s;
 }
 
-/* Images  */
-img {
-    border-radius: 30px;
-    min-height   : 100;
-}
-
-
-
-img:hover {
-    opacity: 0.5;
-}
-
-
-
-.text {
-    color: rgb(116, 65, 65)
-}
-
-#learnMore {
-    opacity: 0;
-}
-
-.behaviorName {
-    margin-top: 10px;
-    font-size : clamp(16px, 1.2vw, 1.2vw);
-    color     : rgb(116, 65, 65)
-}
-
-body.loaded .questions {
-    display: none;
-}
-
-/*
-==============================================
-pullDown
-==============================================
-*/
-
+/* Referenced from http://www.justinaguilar.com/ */
 .pullDown {
     animation-name        : pullDown;
     -webkit-animation-name: pullDown;

@@ -16,12 +16,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Varela+Round&display=swap" rel="stylesheet">
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
-    <title>Dogs</title>
+    <title>Language of Dogs</title>
 </head>
+
 <body>
     <!--- Bootstrap grid -->
     <div class="container-fluid">
-        <div id="page5">
+        <section aria-labelledby="detailPage" id="detailPage">
             <span id="categoryName"><br>
                 <h1>Relaxed</h1><br>
             </span>
@@ -29,31 +30,34 @@
                 <div class="row">
                     <div class="col-2"></div>
                     <div class="col-md-2 stackem">
-                        <div class="container container animate__animated animate__fadeIn" onclick="addText('When your dog is relaxed, the muscles look soft and look relaxed. The muscles could also curl up into something similar to a smile, and not showing teeth.','plac')">
-                            <img src="assets/relaxed.jpg" class="img-fluid behaviorImg" alt="dog lying down comfortably on a couch">
-                            <div class="overlay">
-                                <div class="text">Relaxed Facial Expression</div>
-                            </div>
+                        <div class="container container animate__animated animate__fadeIn"
+                            onclick="addText('When your dog is relaxed, the muscles look soft and look relaxed. The muscles could also curl up into something similar to a smile, and not showing teeth.','plac')">
+                            <img src="assets/relaxed.jpg" class="img-fluid behaviorImg"
+                                alt="dog lying down comfortably on a couch">
+                                <div class="behaviorName">Relaxed Facial Expression</div>
                         </div>
                         <br>
-                        <div class="container container animate__animated animate__fadeIn"onclick="addText('•	When your dog’s mouth is slightly open and the tongue is relaxed and lolling to one side, the dog is relaxed.','plac')">
-                            <img src="assets/relaxed-mouth open.jpg" class="img-fluid behaviorImg" alt="dog lying down on grass with eyes closed, mouth open, and tongue lolling to the left">
-                            <div class="overlay">
-                                <div class="text">Mouth Open and Relaxed Tongue</div>
-                            </div>
+                        <div class="container container animate__animated animate__fadeIn"
+                            onclick="addText('•	When your dog’s mouth is slightly open and the tongue is relaxed and lolling to one side, the dog is relaxed.','plac')">
+                            <img src="assets/relaxed-mouth open.jpg" class="img-fluid behaviorImg"
+                                alt="dog lying down on grass with eyes closed, mouth open, and tongue lolling to the left">
+                                <div class="behaviorName">Mouth Open and Relaxed Tongue</div>
                         </div>
                     </div>
-                    <div class="col-6">
-                        <h2 class="description container animate__animated animate__fadeInUp" id="insert">
-                            Click on the behavior you want to learn about!</h2>
+                    <div class="col-sm-12 col-md-6">
+                        <div class="textWrapper animate__animated animate__fadeInUp">
+                            <h2 id="insert">
+                                Click on the behavior you want to learn about!</h2>
+                        </div>
                         <h3 class="description" id="learnMore"></h3>
                     </div>
                     <div class="col-2"></div>
                 </div>
             </div>
-        </div>
-        <script src="main.js"></script>
+        </section>
     </div>
+    <script src="main.js"></script>
+
 </body>
 
 </html>

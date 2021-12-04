@@ -1,5 +1,6 @@
-/* Background color changes */
-
+/* Background Color Changes
+==============================================
+*/
 function bgColorChange() {
     const btn1 = document.getElementById('btn1');
     btn1.onclick = function () {
@@ -20,6 +21,9 @@ function bgColorChange() {
     }
 }
 
+/* Start animation when scrolled to elements
+==============================================
+*/
 $(window).scroll(function () {
     $('.question').each(function () {
         var imagePos = $(this).offset().top;
@@ -63,6 +67,9 @@ $(window).scroll(function () {
     });
 });
 
+/* Detail Text Box Animation
+==============================================
+*/
 $('.behaviorImg').click(function () {
     $('#insert').addClass('pullDown');
 });
@@ -72,9 +79,14 @@ setInterval(function () {
     $post.removeClass("pullDown");
 }, 3000);
 
-
-
+/* Detail Text Inserting Function
+==============================================
+*/
 function addText(text, learnmoretext) {
+    $('html,body').animate({
+        scrollTop: $("#insert").offset().top
+     });
+     $("#insert").offset().top - 30;
     document.getElementById("learnMore").style.opacity = 0;
     var textContainer = document.getElementById("insert");
     $("#insert").html(text);
@@ -90,6 +102,7 @@ function addText(text, learnmoretext) {
         $post.removeClass("pullDown");
     }, 3500);
 
+    // Learn More Text Inserting Function
     button.addEventListener("click", function () {
         document.getElementById("learnMore").style.opacity = 1;
         var learnMore = document.getElementById("learnMore");
