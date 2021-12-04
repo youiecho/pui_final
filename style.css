@@ -21,7 +21,7 @@ h2 {
 
 /* Buttons */
 button {
-    color           : rgb(216, 98, 102);
+    color           : rgb(116, 65, 65);
     font-family     : 'Varela Round';
     padding         : 15px 25px;
     font-size       : clamp(16px, 1.8vw, 1.8vw);
@@ -34,7 +34,10 @@ button {
     border          : none;
     border-radius   : 30px;
 }
-
+button:hover {
+    background-color:rgb(251, 137, 141);
+    color: white;
+}
 #learnMoreButton {
     color           : white;
     background-color: rgb(251, 137, 141);
