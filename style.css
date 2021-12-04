@@ -134,7 +134,7 @@ img:hover {
 /* Buttons
 ==============================================
 */
-button {
+.button, button {
     color           : rgb(116, 65, 65);
     font-family     : 'Varela Round';
     padding         : 15px 25px;
@@ -147,9 +147,10 @@ button {
     background-color: white;
     border          : none;
     border-radius   : 30px;
+    width: 18vw;
 }
 
-button:hover {
+.button:hover {
     background-color: rgb(251, 137, 141);
     color           : white;
 }
