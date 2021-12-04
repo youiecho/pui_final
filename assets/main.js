@@ -83,10 +83,6 @@ setInterval(function () {
 ==============================================
 */
 function addText(text, learnmoretext) {
-    $('html,body').animate({
-        scrollTop: $("#insert").offset().top
-     });
-     $("#insert").offset().top - 30;
     document.getElementById("learnMore").style.opacity = 0;
     var textContainer = document.getElementById("insert");
     $("#insert").html(text);

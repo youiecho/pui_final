@@ -11,7 +11,7 @@
     <!-- Animate CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- CSS Stylesheet -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Varela+Round&display=swap" rel="stylesheet">
     <!-- jQuery -->
@@ -23,19 +23,19 @@
     <!--- Bootstrap grid -->
     <div class="container-fluid">
         <section aria-labelledby="detailPage" id="detailPage">
-            <span id="categoryName"><br>
-                <h1>Alarmed</h1><br>
-            </span>
+            <div class="categoryName" aria-labelledby="header">
+                <h1>Alarmed</h1>
+            </div>
             <div class="content-cluster">
                 <div class="row">
                     <div class="col-2"></div>
                     <div class="col-md-2 stackem">
-                        <div class="container container animate__animated animate__fadeIn" onclick="addText('A common reason is that  your dog is sensing danger, and is prepared to go into protect mode. Dogs often feel driven to guard the home. They could also be fearful. However, it could also be a sign of friendliness, or just playing around. When playing around, they would have light sneezes, a low posture with a raised ear, pricked ears, or a wagging tail, as opposed to tensed body. It is also important to understand the context to know how they are feeling.','plac')">
+                        <div class="container container animate__animated animate__fadeIn" onclick="addText('A common reason is that your dog is sensing danger, and is prepared to go into protect mode. Dogs often feel driven to guard the home. They could also be fearful.','However, it could also be a sign of friendliness, or just playing around. When playing around, they would have light sneezes, a low posture with a raised ear, pricked ears, or a wagging tail, as opposed to tensed body. It is also important to understand the context to know how they are feeling.')">
                             <img src="assets/alarmed.jpg" class="img-fluid behaviorImg" alt="dog showing teeth and looking intensely">
                                 <div class="behaviorName">Showing Teeth</div>
                         </div>
                         <br>
-                        <div class="container container animate__animated animate__fadeIn" onclick="addText('Your dog could be too excited, for instance, when they ar wagging tails and lightly biting your hand. However, depending on the situation and how tense their body is, it could be an indication of intent to harm.','plac')">
+                        <div class="container container animate__animated animate__fadeIn" onclick="addText('Commonly, but also depending on the situation and how tense their body is, it could also be an indication of intent to harm.','Your dog could be too excited, for instance, when they are wagging tails and lightly biting your hand.')">
                             <img src="assets/alarmed-bite and hold.jpg" class="img-fluid behaviorImg" alt="dog tugging on a rope hard">
                                 <div class="behaviorName">Bite and Hold</div>
                         </div>
@@ -51,7 +51,7 @@
                 </div>
             </div>
         </section>
-        <script src="main.js"></script>
+        <script src="assets/main.js"></script>
     </div>
 </body>
 

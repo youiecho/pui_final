@@ -26,9 +26,9 @@ h2 {
 ==============================================
 */
 body {
+    transition-property       : background;
     text-align                : center;
     transition-duration       : 2000ms;
-    transition-property       : background;
     transition-timing-function: linear;
     transition-timing-function: ease-in;
     text-decoration           : none;
@@ -95,11 +95,11 @@ body {
     padding-left: 10px;
     padding-left: 10px;
     color       : rgb(116, 65, 65);
-    font-size   : clamp(16px, 1.5vw, 1.5vw);
-    ;
+    font-size   : clamp(16px, 1.3vw, 1.3vw);
     min-height   : 45px;
-    line-height  : 45px;
+    line-height  : 30px;
     border-radius: 30px;
+    font-weight: normal;
 }
 
 .textWrapper {
@@ -117,6 +117,8 @@ body {
 
 #learnMore {
     opacity: 0;
+    background-color: white;
+    padding: 16px;
 }
 
 /* Images
